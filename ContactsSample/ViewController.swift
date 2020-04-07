@@ -21,24 +21,26 @@ class ViewController: UIViewController {
         
     }
     
-    switch status {
-    case .notDetermined, .restricted:
-        contactStore.requestAccess(for: .contacts) { granted, error in
-            if let error = error {
-                print(error)
+    @IBAction private func buttonTapped(){
+        switch status {
+        case .notDetermined, .restricted:
+            contactStore.requestAccess(for: .contacts) { granted, error in
+                if let error = error {
+                    print(error)
+                }
+                if granted {
+                    self.registerContactApp()
+                } else {
+                    // アラートからアクセスの許可をしてもらえなかった時
+                }
             }
-            if granted {
-                registerContactApp()
-            } else {
-                // アラートからアクセスの許可をしてもらえなかった時
-            }
+        case .denied: break
+            // 拒否されている場合
+        case .authorized: break
+            // すでにアクセスが許可されている場合
+        default: break
+            // それ以外の場合
         }
-    case .denied:
-        // 拒否されている場合
-    case .authorized:
-        // すでにアクセスが許可されている場合
-    default:
-        // それ以外の場合
     }
     
     func registerContactApp() {
