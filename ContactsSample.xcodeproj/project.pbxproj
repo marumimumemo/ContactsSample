@@ -13,6 +13,7 @@
 		A6AD1333243C7BA00035D038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AD1331243C7BA00035D038 /* Main.storyboard */; };
 		A6AD1335243C7BA10035D038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AD1334243C7BA10035D038 /* Assets.xcassets */; };
 		A6AD1338243C7BA10035D038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AD1336243C7BA10035D038 /* LaunchScreen.storyboard */; };
+		A6AD1341243C7CB10035D038 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AD1340243C7CB10035D038 /* Contacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A6AD1334243C7BA10035D038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6AD1337243C7BA10035D038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6AD1339243C7BA10035D038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6AD1340243C7CB10035D038 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6AD1341243C7CB10035D038 /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				A6AD132A243C7BA00035D038 /* ContactsSample */,
 				A6AD1329243C7BA00035D038 /* Products */,
+				A6AD133F243C7CB10035D038 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				A6AD1339243C7BA10035D038 /* Info.plist */,
 			);
 			path = ContactsSample;
+			sourceTree = "<group>";
+		};
+		A6AD133F243C7CB10035D038 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6AD1340243C7CB10035D038 /* Contacts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
